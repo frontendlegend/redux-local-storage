@@ -2,18 +2,20 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {logOut} from '../actions';
 
+import './login.css';
+
 function Login(props) {
   const logOutNow = () => props.dispatch(logOut());
   
   if (props.loggedIn) {
     return (
-      <div>
+      <div className="header__login">
         <span>{props.email}</span>
         <button className="login__btn" onClick={logOutNow}>выйти</button>
       </div>
     )
     } else {
-      return <span>зарегистрируйтесь</span>
+      return <div className="header__login" />
     }
 }
 

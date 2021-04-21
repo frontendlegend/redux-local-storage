@@ -1,0 +1,43 @@
+.content__image {
+  margin: 2rem auto;
+
+  text-align: center;
+}
+
+.yandex-map {
+  width: 800px;
+  height: 450px;
+}
+
+@media (max-width: 1788px) {
+  .yandex-map {
+    width: 600px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1588px) {
+  .content__image {
+    margin: 1.7rem auto;
+  }
+  .yandex-map {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1388px) {
+  .content__image {
+    margin: 1.5rem auto;
+  }
+  .yandex-map {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1288px) {
+  .yandex-map {
+    display: none;
+  }
+}

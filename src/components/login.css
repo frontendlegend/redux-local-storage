@@ -1,0 +1,20 @@
+.header__login {
+  text-align: center;
+  align-self: center;
+}
+
+.login__btn {
+  padding: 0.3rem 1rem;
+  margin: 0.15rem 0.3rem;
+
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+}
+
+.header__btn:last-child {
+  margin-right: 0;
+}
+
+.header__btn:hover {
+  cursor: pointer;
+}

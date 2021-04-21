@@ -14,9 +14,9 @@ function App() {
       <Header />
 
       <Switch>
-        <Route exact path="/content" component={Content} />
-        <Route exact path="/newpage/:number" component={NewPage} />
-        <Redirect to="/content" />
+        <Route exact path="/redux-local-storage/content" component={Content} />
+        <Route exact path="/redux-local-storage/newpage/:number" component={NewPage} />
+        <Redirect to="/redux-local-storage/content" />
       </Switch>
 
       <Footer />

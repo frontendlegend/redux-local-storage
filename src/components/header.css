@@ -21,6 +21,15 @@
   cursor: pointer;
 }
 
+.header__logo a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.header__logo a:visited {
+  color: inherit;
+}
+
 
 /* Media */
 

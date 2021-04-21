@@ -1,22 +1,24 @@
+import {Link} from 'react-router-dom';
+
 import './navigation.css';
 
 function Navigation() {
   return (
     <ul className="header__nav">
       <li>
-        <a href="/">Грузоотправителям</a>
+        <Link to='/newpage/1'>Грузоотправителям</Link>
       </li>
       <li>
-        <a href="/">Грузоперевозчикам</a>
+        <Link to='/newpage/2'>Грузоперевозчикам</Link>
       </li>
       <li>
-        <a href="/">Отслеживание</a>
+        <Link to='/newpage/3'>Отслеживание</Link>
       </li>
       <li>
-        <a href="/">Помощь</a>
+        <Link to='/newpage/4'>Помощь</Link>
       </li>
       <li>
-        <a href="/">Информационный центр</a>
+        <Link to='/newpage/5'>Информационный центр</Link>
       </li>
     </ul>
   )

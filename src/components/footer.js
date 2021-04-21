@@ -1,8 +1,10 @@
 import React from 'react';
-import appstore from '../img/appstore.png';
-import googleplay from '../img/googleplay.png';
+import {Link} from 'react-router-dom';
 
 import './footer.css';
+
+import appstore from '../img/appstore.png';
+import googleplay from '../img/googleplay.png';
 
 export default function Footer() {
   return (
@@ -12,19 +14,19 @@ export default function Footer() {
 
       <ul className="footer__links">
         <li>
-          <a href="/">Грузоотправителям</a>
+          <Link to='/newpage/1'>Грузоотправителям</Link>
         </li>
         <li>
-          <a href="/">Грузоперевозчиками</a>
+          <Link to='/newpage/2'>Грузоперевозчикам</Link>
         </li>
         <li>
-          <a href="/">Отслеживание</a>
+          <Link to='/newpage/3'>Отслеживание</Link>
         </li>
         <li>
-          <a href="/">Помощь</a>
+          <Link to='/newpage/4'>Помощь</Link>
         </li>
         <li>
-          <a href="/">Информационный портал</a>
+          <Link to='/newpage/5'>Информационный центр</Link>
         </li>
       </ul>
       

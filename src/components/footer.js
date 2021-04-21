@@ -34,7 +34,7 @@ export default function Footer() {
         <p className="about__text">"Why do we use it?
         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."</p>
         <p className="about__author">
-          <a href="/">Smart Logistics</a>
+          <Link to='/'>Smart Logistics</Link>
         </p>
         <p className="about__author">2021</p>
       </div>

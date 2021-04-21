@@ -14,19 +14,19 @@ export default function Footer() {
 
       <ul className="footer__links">
         <li>
-          <Link to='/redux-local-storage/newpage/1'>Грузоотправителям</Link>
+          <Link to='/newpage/1'>Грузоотправителям</Link>
         </li>
         <li>
-          <Link to='/redux-local-storage/newpage/2'>Грузоперевозчикам</Link>
+          <Link to='/newpage/2'>Грузоперевозчикам</Link>
         </li>
         <li>
-          <Link to='/redux-local-storage/newpage/3'>Отслеживание</Link>
+          <Link to='/newpage/3'>Отслеживание</Link>
         </li>
         <li>
-          <Link to='/redux-local-storage/newpage/4'>Помощь</Link>
+          <Link to='/newpage/4'>Помощь</Link>
         </li>
         <li>
-          <Link to='/redux-local-storage/newpage/5'>Информационный центр</Link>
+          <Link to='/newpage/5'>Информационный центр</Link>
         </li>
       </ul>
       

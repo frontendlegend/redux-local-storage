@@ -24,11 +24,11 @@
 }
 
 .footer__links a {
+  color: black;
   text-decoration: none;
 }
 
 .footer__links a:hover {
-  color: #F8F8F8;
   text-decoration: underline;
 }
 
@@ -137,12 +137,17 @@
     display: inline-block;
     margin: 0.5rem 0.7rem;
   
-    color: #F8F8F8;
     font-size: 1.3rem;
     font-style: normal;
 
     background-color: #fdabab;
+  }
+  .footer__links li a {
+    color: #F8F8F8;
     text-shadow: 1px 1px 1px black;
+  }
+  .footer__links a:visited {
+    color: #F8F8F8;
   }
   .footer__icons {
     display: none;

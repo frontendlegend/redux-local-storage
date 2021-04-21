@@ -5,3 +5,8 @@ export const logIn = () => ({
 export const logOut = () => ({
   type: "LOG_OUT"
 });
+
+export const formCollect = (email) => ({
+  type: "COLLECT_FORM",
+  email: email
+});

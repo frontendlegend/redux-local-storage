@@ -1,16 +1,17 @@
 import {createStore} from 'redux';
 import {loadState, saveState} from './localStorage';
-import loggedInOut from './reducers/log';
+import userData from './reducers';
 
 const persistedState = loadState();
 const store = createStore(
-  loggedInOut,
+  userData,
   persistedState
 );
 
 store.subscribe(() => {
   saveState({
-    loggedIn: store.getState().loggedIn
+    loggedInOut: store.getState().loggedInOut,
+    formCollected: store.getState().formCollected
   });
 });
 

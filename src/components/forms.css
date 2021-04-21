@@ -1,0 +1,33 @@
+.form {
+  height: 100%;
+  padding: 10px;
+}
+
+.form__fieldset {
+  width: 208px;
+  margin: 0;
+}
+
+.form__input {
+  display: block;
+  width: 200px;
+  height: 25px;
+  margin: 5px 0;
+}
+
+.form__btn {
+  display: block;
+  width: 234px;
+  margin-top: 5px;
+  padding: 5px 20px;
+
+  border: 1px solid #c2c2c2;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 0 7px 0 0;
+}

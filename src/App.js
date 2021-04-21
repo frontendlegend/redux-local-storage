@@ -1,24 +1,17 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {logIn, logOut} from './actions';
+import Header from './components/header';
+import Content from './components/content';
 
 import './App.css';
 
-function App(props) {
-  const logInNow = () => props.dispatch(logIn()),
-        logOutNow = () => props.dispatch(logOut());
-
+function App() {
   return (
-    props.loggedIn
-      ? <button onClick={logOutNow}>выйти</button>
-      : <button onClick={logInNow}>войти</button>
+    <div>
+      <Header />
+      <Content />
+    </div>
+    
   )
 }
 
-const mapStateToProps = function(state) {
-  return {
-    loggedIn: state.loggedIn
-  }
-}
-
-export default connect(mapStateToProps)(App)
+export default App;

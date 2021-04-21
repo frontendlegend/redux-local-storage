@@ -17,14 +17,18 @@ function RegForm(props) {
           const json = JSON.stringify(Object.fromEntries(formData.entries()));
           const data = JSON.parse(json);
 
-          props.dispatch(formCollect(data.email));
+          props.dispatch(formCollect(data));
           props.dispatch(logIn());
           form.reset();
         }}>
           <fieldset className="form__fieldset">
             <legend className="form__name">Регистрация</legend>
 
-            <input className="form__input" type="email" name="email" placeholder="Email" required></input>
+            <input className="form__input" type="text" name="name" placeholder="Имя" required></input>
+            <input className="form__input" type="text" name="surname" placeholder="Фамилия" required></input>
+            <input className="form__input" type="text" name="city" placeholder="Город" required></input>
+            <input className="form__input" type="phone" name="phone" placeholder="Телефон" required></input>
+            <input className="form__input" type="email" name="email" placeholder="E-mail" required></input>
             <input className="form__input" type="password" name="password" placeholder="Пароль" required></input>
 
             <label className="form__checkbox">

@@ -1,0 +1,62 @@
+.account__info {
+  margin: 1rem 2rem 1.5rem;
+}
+
+.account__info h1 {
+  margin: 0 0 2rem;
+}
+
+.account__info p {
+  margin: 0 0 0.5rem;
+
+  font-size: 1.5rem;
+  color: #fdabab;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.account__info span {
+  color: black;
+}
+
+
+/* Media */
+
+@media (max-width: 1288px) {
+  .account__info h1 {
+    margin: 0 0 1.5rem;
+
+    font-size: 2rem;
+  }
+  .account__info p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 988px) {
+  .account__info h1 {
+    font-size: 1.7rem;
+  }
+  .account__info p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 788px) {
+  .account__info h1 {
+    font-size: 1.5rem;
+  }
+  .account__info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 488px) {
+  .account__info h1 {
+    font-size: 1.3rem;
+    margin: 0 0 1rem;
+  }
+  .account__info p {
+    font-size: 0.7rem;
+  }
+}

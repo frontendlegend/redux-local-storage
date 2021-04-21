@@ -9,6 +9,9 @@
   height: 450px;
 }
 
+
+/* Media */
+
 @media (max-width: 1788px) {
   .yandex-map {
     width: 600px;

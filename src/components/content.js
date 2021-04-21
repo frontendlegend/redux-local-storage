@@ -2,6 +2,7 @@ import React from 'react';
 import RegForm from './forms';
 import { connect } from 'react-redux';
 import YandexMap from './yandex-map';
+import Account from './account';
 
 import './content.css';
 
@@ -19,21 +20,21 @@ function ContentText() {
 function Content(props) {
   return (
     props.loggedIn
-        ? <div className="content logged-in">
-            <ContentText />
-            <YandexMap zoom={9}/>
-            <div className="content__text">
-              <h1 style={{fontSize: '2rem'}}>Добро пожаловать!</h1>
-              <p>Where can I get some?
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-            </div>
+      ? <div className="content logged-in">
+          <Account />
+          <YandexMap zoom={9}/>
+          <div className="content__text">
+            <h1>Добро пожаловать!</h1>
+            <p>Where can I get some?
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
           </div>
-        :
-          <div className="content logged-out">
-            <ContentText />
-            <YandexMap zoom={2.5}/>
-            <RegForm />
-          </div>
+        </div>
+      :
+        <div className="content logged-out">
+          <ContentText />
+          <YandexMap zoom={2.5}/>
+          <RegForm />
+        </div>
   )
 }
 

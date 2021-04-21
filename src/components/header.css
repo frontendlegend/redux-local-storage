@@ -21,6 +21,9 @@
   cursor: pointer;
 }
 
+
+/* Media */
+
 @media (max-width: 1288px) {
   .header {
     grid-template-columns: 5fr 1.5fr;

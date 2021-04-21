@@ -1,12 +1,165 @@
 .footer {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 0.75fr 0.75fr;
   width: 100%;
-  height: 60px;
-  padding: 20px;
+  height: 200px;
+  padding: 1rem;
 
   background-color: #F8F8F8;
   border-top: 1px solid #E7E7E7;
 
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  overflow: hidden;
+}
+
+.footer__links {
+  margin: 0.7rem 0;
+
+  list-style: square;
+}
+
+.footer__links li {
+  margin-bottom: 0.3rem;
+
+  font-style: italic;
+}
+
+.footer__links a {
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: #F8F8F8;
+  text-decoration: underline;
+}
+
+.footer__links a:visited {
+  color: inherit;
+}
+
+.footer__about {
+  margin: 1rem 1.5rem;
+}
+
+.about__text {
+  margin: 0 0 0.7rem;
+}
+
+.about__author {
+  margin: 0;
+
+  font-style: italic;
+  text-align: end;
+}
+
+.about__author a:visited {
+  color: inherit;
+}
+
+.footer__icons {
+  margin: 3rem 2rem;
+
+  text-align: center;
+}
+
+.footer__icon {
+  width: 120px;
+  height: 40px;
+  margin-right: 0.7rem;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+}
+
+.footer__icon:last-child {
+  margin-right: 0;
+}
+
+
+/* Media */
+
+@media (max-width: 1788px) {
+  .footer {
+    padding: 0.8rem;
+  }
+  .footer__about {
+    margin: 0.7rem 1.2rem;
+  }
+  .footer__icons {
+    margin: 3rem 1.7rem;
+  }
+}
+
+@media (max-width: 1588px) {
+  .footer {
+    height: 160px;
+    padding: 0.5rem;
+  }
+  .footer__about {
+    margin: 0.7rem 1.2rem;
+  }
+  .footer__icons {
+    margin: 3rem 1.7rem;
+  }
+  .footer__icon {
+    width: 100px;
+    height: 33px;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 1288px) {
+  .footer {
+    height: 150px;
+    padding: 0.3rem;
+  }
+  .footer__about {
+    margin: 0.7rem 0.8rem;
+  }
+  .about__text {
+    margin: 0.3;
+  }
+  .footer__icons {
+    margin: 3rem 1rem;
+  }
+  .footer__icon {
+    width: 100px;
+    height: 33px;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 988px) {
+  .footer {
+    grid-template-columns: 0fr 2fr 1fr 0fr;
+  }
+  .footer__links li {
+    display: inline-block;
+    margin: 0.5rem 0.7rem;
+  
+    color: #F8F8F8;
+    font-size: 1.3rem;
+    font-style: normal;
+
+    background-color: #fdabab;
+    text-shadow: 1px 1px 1px black;
+  }
+  .footer__icons {
+    display: none;
+  }
+}
+
+@media (max-width: 888px) {
+  .footer {
+    display: inline-block;
+    height: 100%;
+  }
+  .footer__links {
+    margin: 0.3rem 0;
+  
+    list-style: square;
+  }
+  .footer__about {
+    margin: 1rem 3.5rem;
+  }
 }
